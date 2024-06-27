@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Manrope", sans-serif;
+    background-color: hsl(210, 46%, 95%);
+}
+
+
+
+main {
+    /* display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr; */
+    max-width: 70rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    margin: 2rem;
+    
+}
+
+.product-image {
+   object-fit: cover;
+
+}
+
+.avatar {
+    max-width: 3rem;
+    border-radius: 2rem;
+}
