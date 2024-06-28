@@ -94,7 +94,7 @@ main {
     z-index: 1;
 }
 
-.share:hover .share-menu--open {
+.share-menu--open {
     display: flex;
     align-items: center;
 }
