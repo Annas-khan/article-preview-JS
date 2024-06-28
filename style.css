@@ -94,7 +94,13 @@ main {
     z-index: 1;
 }
 
-.share:hover .share-menu {
+.share:hover .share-menu--open {
     display: flex;
     align-items: center;
+}
+
+button {
+    background-color: rgb(255, 255, 255);
+    border: none;
+  
 }

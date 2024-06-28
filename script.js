@@ -1,5 +1,6 @@
-const icon = document.querySelector(".icon");
+const shareMenuTrigger = document.querySelector("button");
+const shareMenu = document.querySelector(".share-menu");
 
-icon.addEventListener("click", () => {
-    
+shareMenuTrigger.addEventListener("click", () => {
+    shareMenu.classList.toggle("share-menu--open");
 })
