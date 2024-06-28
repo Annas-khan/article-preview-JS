@@ -5,16 +5,30 @@ body {
     min-height: 100vh;
     font-family: "Manrope", sans-serif;
     background-color: hsl(210, 46%, 95%);
+    font-size: 0.8rem;
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
 }
 
 
 
 main {
-    /* display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr; */
-    max-width: 70rem;
-    background-color: #fff;
+    max-width: 57rem;
+    background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
@@ -26,16 +40,61 @@ main {
 }
 
 .content {
-    margin: 2rem;
+    padding: 2rem;
     
 }
 
 .product-image {
-   object-fit: cover;
-
+   max-width: 30rem;
 }
 
 .avatar {
     max-width: 3rem;
     border-radius: 2rem;
+}
+
+.icon {
+    background-color: rgb(227, 221, 253);
+    color: grey; 
+    border-radius: 50%;
+    padding: 0.7rem;
+    aspect-ratio: 1;
+    margin-left: 8rem;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icon:hover {
+    background-color: black;
+    cursor: pointer;    
+}
+
+.share {
+    position: absolute;
+    font-size: 1.2em;
+    color: #777;
+    cursor: pointer;
+    margin-left: 12rem;
+}
+
+.share-menu {
+    display: none;
+    position: absolute;
+    bottom: 3rem;
+    right: 0;
+    background-color: #2b3a4a;
+    color: white;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.share:hover .share-menu {
+    display: flex;
+    align-items: center;
 }
